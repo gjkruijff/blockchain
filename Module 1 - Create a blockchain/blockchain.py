@@ -112,6 +112,8 @@ def get_chain():
                 'length' : len(blockchain.chain)}
     return jsonify(response), 200
 
+# Running the app 
+app.run(host = '127.0.0.1', port = 5000) # instead of externally visible 0.0.0.0
 
 
 
